@@ -55,10 +55,10 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Don't Get Bootstrapped Down: Reading the Fine Print on Responsive Frameworks</title>
+		<title>NCDevCon 2015 Notes</title>
 
-		<meta name="description" content="Don't Get Bootstrapped Down: Reading the Fine Print on Responsive Frameworks">
-		<meta name="author" content="Aaron Ladage">
+		<meta name="description" content="NCDevCon 2015 Notes: Bootstrap, Toolbox and Promises">
+		<meta name="author" content="Aaron Ladage and others summarized by Pete Lombardo">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -67,6 +67,7 @@
 
 		<link rel="stylesheet" href="assets/css/reveal.min.css">
 		<link rel="stylesheet" href="assets/css/theme/default.css" id="theme">
+		<link rel="stylesheet" href="http://siirila.github.io/devTools_talk/css/custom.css">
 
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="assets/css/zenburn.css">
@@ -95,15 +96,21 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Don't Get Bootstrapped<br>Down</h1>
-					<h3>Reading the Fine Print on Responsive Frameworks</h3>
-					<p>
-						<small><a href="http://aaronladage.com">Aaron Ladage</a> / <a href="http://mailto:aladage@degdigital.com">aladage@degdigital.com</a> / <a href="http://twitter.com/aladage">@aladage</a>
+					<h1>NCDevCon 2015 Notes </h1>
+					<h3><br/>Bootstrap, Chrome Toolbox and JS Promises</h3>
+						<small><a href="http://www.jhsph.edu/offices-and-services/center-for-teaching-and-learning/contact-CTL/">Pete Lombardo</a> / <a href="http://mailto:pete.lombardo@jhu.edu">pete.lombardo@jhu.edu</a>
 						</small>
 					</p>
 				</section>
 
 				<section>
+					<h2>Part 1: Don't Get BootstrappedDown</h2>
+					<h3>Reading the Fine Print on Responsive Frameworks</h3>
+					<p>
+						<small><a href="http://aaronladage.com">Aaron Ladage</a> / <a href="http://mailto:aladage@degdigital.com">aladage@degdigital.com</a> / <a href="http://twitter.com/aladage">@aladage</a>
+						</small>
+					</p>
+				</section><!--				<section>
 					<img style="left: -200px; position: relative; border: none; background: none; outline: none; box-shadow: none;" src="assets/images/headshot.png" alt="headshot">
 					<div style="position: absolute; top: 110px; text-align: left; left: 525px; width: 650px;">
 						<h2>Aaron Ladage</h2>
@@ -112,9 +119,9 @@
 							<li style="list-style: none;">DEG, Kansas City</li>
 						</ul>
 					</div>
-				</section>
+				</section>-->
 
-				<section>
+				<!--<section>
 					<h2>A quick history lesson&hellip;</h2>
 				</section>
 
@@ -124,7 +131,7 @@
 				<section data-background="assets/images/oldcomputer.jpg">
 					<h2 class="text-reverse text-large">We couldn't even use the computer while we were in the bathroom.</h2>
 				</section>
-
+-->
 				<section>
 					<h2>To paraphrase Jeremy Keith:</h2>
 					<p class="fragment">The web has always been responsive<span class="fragment">&hellip;right up until developers and designers came along and broke it.</span></p>
@@ -140,7 +147,7 @@
 					</div>
 				</section>
 
-				<section>
+				<!--<section>
 					<h2>A funny thing happened in 2007&hellip;</h2>
 					<img class="fragment stretch" src="assets/images/original-iphone.jpg" alt="original iPad">
 				</section>
@@ -166,7 +173,7 @@
 						<li class="fragment">Pinch, zoom and double-tap were considered features, not annoyances.</li>
 					</ul>
 				</section>
-
+-->
 				<section>
 					<h2>Most sites went one of two directions:</h2>
 					<ul class="fragment">
@@ -175,7 +182,7 @@
 					</ul>
 				</section>
 
-				<section>
+<!--				<section>
 					<h2>Something else happened in 2010&hellip;</h2>
 					<ul class="fragment">
 						<li>"Responsive Web Design"</li>
@@ -183,13 +190,13 @@
 						<li class="fragment">Publish date: May 25, 2010<span class="fragment">&hellip;nearly three years after the release of the iPhone.</span></li>
 					</ul>
 				</section>
-
+-->
 				<section>
-					<h2>This one article changed everything.</h2>
-					<p>Marcotte's ideas flipped UI development on its ear:
+					<h2>Then, in 2010...</h2>
+					<p>Ethan Marcotte coined the phrase "responsive Web Design"</p>
 					<ul class="fragment">
 						<li>"One codebase to rule them all"
-							<ul class="fragment">
+							<ul >
 								<li>Fluid grids based on proportionate sizes and relative units</li>
 								<li class="fragment">Flexible images</li>
 								<li class="fragment">Media queries to detect and respond to the device’s viewport dimensions</li>
@@ -214,7 +221,7 @@
 					</div>
 				</section>
 
-				<section>
+			<!--	<section>
 					<h2>People. Freaked. Out.</h2>
 					<img class="stretch" src="assets/images/freakout.gif" alt="freakout">
 				</section>
@@ -275,12 +282,17 @@
 						<li><span class="yellow fragment">&#9745;</span> It (arguably) takes more development time.</li>
 						<li><span class="red fragment">&#9744;</span> Performance takes a front seat.</li>
 					</ul>
+				</section>-->
+
+				<section>
+					<h2>A bit about Frameworks...</h2>
+
 				</section>
 
 				<section>
 					<h2>OMG frameworks have everything!!!</h2>
 					<img class="stretch" src="assets/images/bloodymary.jpg" alt="bloody mary">
-					<p>We should use them for every site ever!!!</p>
+					<p>We should use them for every site ever!!! (or NOT)</p>
 				</section>
 
 				<section>
@@ -288,29 +300,17 @@
 					<ul class="fragment">
 						<li>Before you decide to use a responsive framework, ask yourself two questions:
 							<ul class="fragment">
-								<li>Does the value it provides outweigh its potential pitfalls?</li>
-								<li class="fragment">Am I asking my end users to shoulder the burden of conveniences during development?</li>
+								<li>Does the value it provides outweigh its potential pitfalls? (see Clones ahead)</li>
+								<li class="fragment">Am I asking my end users to shoulder the burden of conveniences during development?<br/><h3 style="color:red">????</h3></li>
 							</ul>
+							
 						</li>
 					</ul>
 				</section>
 
-				<section>
-					<h2>If I can't talk you out of using frameworks on production sites entirely, I hope I can at least show<br>you how to use them differently.</h2>
-				</section>
 
 				<section>
 					<h2>Attack of the Clones</h2>
-				</section>
-
-				<section>
-					<h2>Attack of the Clones</h2>
-					<img class="stretch" src="assets/images/multiplicity-group.jpg" alt="multiplicity group">
-				</section>
-
-				<section>
-					<h2>Attack of the Clones</h2>
-					<img class="stretch" src="assets/images/multiplicity-solo.jpg" alt="multiplicity solo">
 				</section>
 
 				<section>
@@ -330,20 +330,20 @@
 					<p>"Creates a consistent design language and coding style."</p>
 					<img class="stretch" src="assets/images/site_criticue.png" alt="Criticue">
 				</section>
-
+<!--
 				<section>
 					<h2>Attack of the Clones</h2>
 					<p>"Creates a consistent design language and coding style."</p>
 					<img class="stretch" src="assets/images/site_dropbucket.png" alt="Dropbucket">
 				</section>
-
+-->
 				<section>
 					<h2>Attack of the Clones</h2>
 					<p>"Creates a consistent design language and coding style."</p>
 					<img class="stretch" src="assets/images/site_fixr.png" alt="Fixr">
 				</section>
 
-				<section>
+<!--				<section>
 					<h2>Attack of the Clones</h2>
 					<p>"Creates a consistent design language and coding style."</p>
 					<img class="stretch" src="assets/images/site_pinittome.png" alt="Pinittome">
@@ -354,7 +354,7 @@
 					<p>"Creates a consistent design language and coding style."</p>
 					<img class="stretch" src="assets/images/site_aaronladage.png" alt="Aaron Ladage">
 				</section>
-
+-->
 				<section>
 					<h2>Attack of the Clones</h2>
 					<p>"Creates a consistent design language and coding style."</p>
@@ -369,7 +369,7 @@
 					</ul>
 				</section>
 
-				<section>
+	<!--			<section>
 					<h2>The Right Tool for the job</h2>
 				</section>
 
@@ -388,67 +388,38 @@
 					<h2>The Right Tool for the job</h2>
 					<img class="stretch" src="assets/images/surgery.jpg" alt="surgery">
 				</section>
-
+-->
 				<section>
 					<h2>The Right Tool for the job</h2>
 					<ul class="fragment">
 						<li>Certain tools are better for certain situations than others.</li>
 						<li class="fragment">A tool that can do everything pretty well isn't always better than a tool that can do one thing really well.</li>
+						<li class="fragment"><b style="color:red">(agreed)</b></li>
 					</ul>
 				</section>
 
-				<section>
+			<section>
+					<h2><div style="color:red">HOWEVER:</div></h2>
+					<h3>Next few slides are maintained for discussion. I personally disagree with the author.</h3>
+					
+				</section>
+			<section>
 					<h2>The Right Tool for the job</h2>
 					<img class="stretch" src="assets/images/features_all.png" alt="all features">
 				</section>
+
+
 
 				<section>
 					<h2>The Right Tool for the job</h2>
 					<img class="stretch" src="assets/images/features_some.png" alt="some features">
 				</section>
 
-				<section>
-					<h2>The Right Tool for the job</h2>
-					<p>What to do differently:</p>
-					<ul class="fragment">
-						<li>A framework shouldn't be a dependency for every project. Evaluate if it's really needed first.</li>
-						<li class="fragment">If you do find a framework to be appropriate, establish a baseline of components you plan to use.</li>
-						<li class="fragment">If possible, strip out or conditionally load the CSS and JS for unused components.</li>
-					</ul>
-				</section>
 
-				<section>
-					<h2>Performance is King</h2>
-				</section>
-
-				<section>
-					<h2>Performance is King</h2>
-					<ul>
-						<li><strong>Walmart:</strong> Sharp decline in conversion rate as average site load time increases from 1 to 4 seconds.</li>
-						<li class="fragment"><strong>Walmart:</strong> Every 1 second shaved off load time increased conversions by 2%. Incremental revenue went up 1% with every 100ms decrease.</li>
-						<li class="fragment"><strong>Amazon:</strong> 1% decrease in revenue for every 100ms added to page load.</li>
-						<li class="fragment"><strong>Etsy:</strong> 160k increase = 12% increase in mobile bounce rate.</li>
-						<li class="fragment"><strong>Google:</strong> Shoppers expect pages to load in  seconds or less. At 3 seconds a large share abandon.</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>“250 milliseconds, either slower or faster, is the magic number for competitive advantage on the Web”</h2>
-					<h3>Microsoft</h3>
-				</section>
-
-				<section>
-					<h2>Performance is King</h2>
-					<img class="stretch" src="assets/images/perf_06.png" alt="perf_06">
-				</section>
-
-				<section>
-					<h2>Performance is King</h2>
-					<p>What to do differently:</p>
-					<ul class="fragment">
-						<li>Minify, uglify, concatenate. Oh my!</li>
-						<li class="fragment">Strip out unused tools from the SASS/LESS and recompile. There's no reason to load code you're not using.</li>
-					</ul>
+			<section>
+					<h2><div style="color:red">What about CDN's?</div></h2>
+					<h4>no answer.</h4>
+					
 				</section>
 
 				<section>
@@ -508,70 +479,425 @@
 					<ul class="fragment">
 						<li>Architect your application today like your framework will change tomorrow.</li>
 						<li class="fragment">If you're using a preprocessor like SASS or LESS, consider extending Bootstrap, rather than using its provided classes.</li>
+						<li class="fragment">This keeps your classes more semantic and human-readable, and you're not quite as locked into the framework if things go wrong.</li>
 					</ul>
 				</section>
-
 				<section>
 					<h3>Choose Your Framework Like<br>You'd Choose Your Spouse</h3>
 					<p>What to do differently:</p>
 					<img class="stretch" src="assets/images/extending.png" alt="extending">
 				</section>
+	
 
+			</div><!---END BOOTSTRAP SLIDES --->
+			
+			
+			
+			<!-------------------------------------------------------------------------- -->
+			<!-------------------------------------------------------------------------- -->
+			<!-------------------------------------------------------------------------- -->
+			<!-------------------------------------------------------------------------- -->
+			<!-------------------------------------------------------------------------- -->
+			<!-------------------------------------------------------------------------- -->
+			<!-------------------------------------------------------------------------- -->
+			<!-------------------------------------------------------------------------- -->
+			<!-------------------------------------------------------------------------- -->
+			<!-------------------------------------------------------------------------- -->
+			<!-------------------------------------------------------------------------- -->
+			
+			
+			
+			
+			
+			<!--NEXT  -->
+			<div class="slides">
 				<section>
-					<h3>Choose Your Framework Like<br>You'd Choose Your Spouse</h3>
-					<p>What to do differently:</p>
-					<ul>
-						<li>Architect your application today like your framework will change tomorrow.</li>
-						<li>If you're using a preprocessor like SASS or LESS, consider extending Bootstrap, rather than using its provided classes.</li>
-						<li>This keeps your classes more semantic and human-readable, and you're not quite as locked into the framework if things go wrong.</li>
-					</ul>
-				</section>
+					<h1>Chrome DevTools</h1>
 
-				<section>
-					<h2>Be framework agnostic.</h2>
-					<img class="stretch" src="assets/images/socrates.jpg" alt="Socrates">
-				</section>
-
-				<section>
-					<h3>To summarize&hellip;</h3>
-					<ul class="fragment">
-						<li>Responsive design has come a long way in the last five years, and frameworks are a natural result of this tectonic shift.</li>
-						<li class="fragment">CSS frameworks have their advantages, especially for prototyping, or in large organizations and projects.</li>
-						<li class="fragment">That said, they're also potentially problematic on production sites.</li>
-						<li class="fragment">Avoid frameworks if you can.</li> 
-						<li class="fragment">If you must use them, be aware of and work around their shortcomings.</li> 
-					</ul>
-				</section>
-
-				<section>
-					<h3>To summarize&hellip;</h3>
-					<ul class="fragment">
-						<li>Frameworks can make your site look generic out of the box. Customize your look and feel.</li>
-						<li class="fragment">Every site has different needs. Don't assume a framework is a dependency.</li>
-						<li class="fragment">Performance matters.</li>
-						<li class="fragment">Frameworks can and will change. Keep your site as agnostic of those changes as possible.</li> 
-					</ul>
-				</section>
-
-				<section>
-					<h2>Remember:</h2>
-					<ul class="fragment">
-						<li>Does the value a framework provides outweigh its potential pitfalls?</li>
-						<li class="fragment">Am I asking my end users to shoulder the burden of conveniences the framework only gives us during the development process?</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Thanks for listening.</h2>
-					<img class="stretch" src="assets/images/waldo.jpg" alt="waldo">
-					<p>
-						<small><a href="https://github.com/aladage/dont-get-bootstrapped-down">https://github.com/aladage/dont-get-bootstrapped-down</a>
-						</small>
 					</p>
 				</section>
+				
+							<section>
+					<h2>Jared Siirila</h2>
 
+					<p><a href="http://siirila.github.io/devTools_talk/#/">siirila.github.io/devTools_talk</a></p>
+				</section>
+
+				<section>
+					<h2>Chrome Channels</h2>
+					<table>
+						<tr>
+							<th></th>
+							<th>Channel</th>
+							<th>Description</th>
+						</tr>
+						<tr>
+							<td class="icon_column"><img src="http://siirila.github.io/devTools_talk/images/chrome.png" alt="Chrome icon" class="icon"></td>
+							<td>Stable</td>
+							<td>Standard released version. Major updates every 6 weeks.</td>
+						</tr>
+						<tr class="fragment fade-out" data-fragment-index="1">
+							<td class="icon_column"><img src="http://siirila.github.io/devTools_talk/images/chrome.png" alt="Chrome icon" class="icon"></td>
+							<td>Beta</td>
+							<td>One step ahead of stable. Major updates every 6 weeks.</td>
+						</tr>
+						<tr class="fragment fade-out" data-fragment-index="1">
+							<td class="icon_column"><img src="http://siirila.github.io/devTools_talk/images/chrome.png" alt="Chrome icon" class="icon"></td>
+							<td>Dev</td>
+							<td>First tested version. Updated 2-3 times per week.</td>
+						</tr>
+						<tr>
+							<td class="icon_column"><img src="http://siirila.github.io/devTools_talk/images/chrome-canary.png" alt="Chrome canary icon" class="icon"></td>
+							<td>Canary</td>
+							<td>Bleeding edge. Released daily. Untested and could be broken.</td>
+						</tr>
+						<tr></tr>
+					</table>
+				</section>
+
+				<section>
+					<h1>Design</h1>
+				</section>
+
+				<section>
+					<p>drop</p>
+					<p>elements</p>
+					<p>drag</p>
+					<p>and</p>
+					<p>to</p>
+					<p>rearrange</p>
+					<aside class="notes">Oh no! Are your elements in the wrong order? Drag and Drop!</aside>
+				</section>
+
+				<section>
+					<p>When editing <em style="color:#00DD55;">almost</em> any string containing a number in the Elements panel, the arrow keys can be used to increment/decrement the value</p>
+					<p class="point1">This works in suprising places, such as on Hex values</p>
+					<p class="point1 fragment">Hold the <kbd>shift</kbd> key to increment/decrement by 10 with the arrow keys</p>
+					<p class="point3 fragment">Hold the <kbd>alt</kbd> key to increment/decrement by .1 with the arrow keys</p>
+				</section>
+
+				<section data-background="http://siirila.github.io/devTools_talk/images/northern-lights.jpeg">
+					<h1>Color Picker</h1>
+					<h2 class="fragment">When using the color picker:</h2>
+					<ul class="fragment">
+						<li class="fragment">click the color box, </li>
+						<li class="fragment">then click the page</li>
+						<li class="fragment">if you move the mouse over the page a magnifying glass will appear that allows you to pick a specific pixel’s color</li>
+					</ul>
+				</section>
+
+				<section>
+					<p>Shift+click on a color in the sidebar to switch between color formats (rgb, hex, hsl)</p>
+				</section>
+
+				<section>
+					<img src="http://siirila.github.io/devTools_talk/images/chrome-canary.png" alt="Chrome Canary icon" class="canary icon">
+					<h1>Select colors from the site's color palate</h1>
+				</section>
+
+				<section data-transition="slide-in fade-out">
+					<h1>Media Queries</h1>
+				</section>
+
+				<section data-transition="fade-in slide-out">
+					<h1>Development</h1>
+				</section>
+
+				<section>
+					<section>
+						<h1>Tired of your mouse slowing you down?</h1>
+					</section>
+					<section>
+						<h1>You should try...</h1>
+					</section>
+					<section>
+						<h1>Keyboard Shortcuts</h1>
+					</section>
+					<section>
+						<p>Navigate the DOM in the Elements panel using arrow keys</p>
+						<div><kbd>&#8593;</kbd></div>
+						<div>
+							<kbd>&#8592;</kbd>
+							<kbd>&#8595;</kbd>
+							<kbd>&#8594;</kbd>
+						</div>
+					</section>
+					<section>
+						<table>
+							<tr>
+								<th>Mac</th>
+								<th>Windows</th>
+								<th>Action</th>
+							</tr>
+							<tr>
+								<td>
+									<kbd>Esc</kbd>
+								</td>
+								<td>
+									<kbd>Esc</kbd>
+								</td>
+								<td>
+									Shows/hides the console
+								</td>
+							</tr>
+						</table>
+					</section>
+					<section>
+						<table>
+							<tr>
+								<th>Mac</th>
+								<th>Windows</th>
+								<th>Action</th>
+							</tr>
+							<tr>
+								<td>
+									<kbd>Ctrl</kbd> + <kbd>G</kbd>
+								</td>
+								<td>
+									<kbd>Ctrl</kbd> + <kbd>G</kbd>
+								</td>
+								<td>
+									Jump to a specific line number in the current file.
+								</td>
+							</tr>
+						</table>
+						<p>Can also be done using the Search for file by name dialog by putting a : at the start</p>
+					</section>
+					<section>
+						<table>
+							<tr>
+								<th>Mac</th>
+								<th>Windows</th>
+								<th>Action</th>
+							</tr>
+							<tr>
+								<td>
+									<kbd>Cmd</kbd> + <kbd>opt</kbd> + <kbd>C</kbd>
+								</td>
+								<td>
+									<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd>
+								</td>
+								<td>
+									Toggle into inspect element mode when in the browser window.
+								</td>
+							</tr>
+						</table>
+						<p>Useful to inspect elements that are hidden when the mouse moves out of them</p>
+					</section>
+					<section>
+						<table>
+							<tr>
+								<th>Mac</th>
+								<th>Windows</th>
+								<th>Action</th>
+							</tr>
+							<tr>
+								<td>
+									<kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>O</kbd>
+								</td>
+								<td>
+									<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>O</kbd>
+								</td>
+								<td>
+									List and search functions in current file
+								</td>
+							</tr>
+						</table>
+					</section>
+					<section>
+						<table>
+							<tr>
+								<th>Mac</th>
+								<th>Windows</th>
+								<th>Action</th>
+							</tr>
+							<tr>
+								<td>
+									<kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>D</kbd>
+								</td>
+								<td>
+									<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>D</kbd>
+								</td>
+								<td>
+									Dock/Undock the DevTools with the browser window
+								</td>
+							</tr>
+						</table>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>Did your DOM change and you can't find what caused it?</h1>
+					</section>
+					<section>
+						<h1>Tired of searching through code looking for the culprit?</h1>
+					</section>
+					<section>
+						<h1>DOM Breakpoints</h1>
+					</section>
+					<section>
+						<h2>Breakpoints for DOM tree modifications including attribute changes and element removal.</h2>
+						<button class="btn btn-primary btn-lg" id="btn-dom-modification">Click Me!</button>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Other Useful functions in the Console</h2>
+						<p>Not in the console object</p>
+						<p>These only exists inside the console!</p>
+					</section>
+					<section>
+						<h2>$()</h2>
+						<h2>$$()</h2>
+						<p>Aliases for document.querySelector() and document.querySelectorAll() respectively.</p>
+					</section>
+					<section id="copy-to-clipboard">
+						<h2>copy()</h2>
+						<p>Copies whatever element is passsed into it to the clipboard</p>
+						<br>
+						<aside class="notes">copy($("#copy-to-clipboard")[0])</aside>
+					</section>
+					<section>
+						<h2>monitor(function)</h2>
+						<p>When the specified function is called, a message is logged with the method name and arguments to the method.</p>
+					</section>
+					<section>
+						<h2>monitorEvents(object,[events])</h2>
+						<p>When one of the specified events occurs on the object, log the event object to the console.</p>
+					</section>
+				</section>
+
+				<section>
+					<h1>Workspaces</h1>
+				</section>
+				<section data-transition="zoom slide-out">
+					<h1>Performance</h1>
+					<h1>and</h1>
+					<h1>Debugging</h1>
+				</section>
+
+				<section>
+					<h1>Preserve Log</h1>
+					<p>Keeps the log between full page navigation. An option exists for this in both the Network panel and the Console</p>
+				</section>
+
+				<section>
+					<h1>XHR Instant Replay!</h1>
+					<p>Right click on any XHR request in the Network panel to have the option to replay that request</p>
+				</section>
+
+				<section>
+					<h1>Show/Hide columns in the Network Panel</h1>
+				</section>
+
+				<section>
+					<h1>Rewind Debugger</h1>
+					<p>When debugging code, rerun the code in the any frame in the Call Stack by right clicking the frame and selecting to Restart Frame</p>
+					<aside class="notes">Set breakpoint in navigateRight at line 3620</aside>
+				</section>
+
+				<section>
+					<h1>Conditional Breakpoints</h1>
+					<button class="btn btn-primary btn-lg" id="btn-conditional-break">2 + 2 =</button>
+					<h2 id="conditional-break-total" class="inline-answer"></h2>
+				</section>
+
+				<section>
+					<div style="position: relative;">
+						<h2 class="fragment fade-out" data-fragment-index="1">Tired of having sequential messages stacked in the Console?</h2>
+						<h2 class="fragment fade-in" data-fragment-index="1" style="position:absolute; top: 0;">Enable "Show timestamps" in the Settings</h2>
+					<div>
+					<button class="btn btn-primary btn-lg" id="btn-stack-msg">Repeat</button>
+				</section>
+
+				<section>
+					<section>
+						<h1>Snippets</h1>
+					</section>
+					<section>
+						<h2>The Sources panel allows you to create, store, and run snippets of JavaScript</h2>
+					</section>
+					<section>
+						<h2>Store useful utilities</h2>
+					</section>
+					<section>
+						<h2><a href="https://gist.github.com/nicdaCosta/4072412">Grep</a></h2>
+						<p>Attaches a Grep method to the Object prototype</p>
+					</section>
+					<section>
+						<h2><a href="https://github.com/bgrins/devtools-snippets/blob/master/snippets/jquerify/jquerify.js">jQuerify</a></h2>
+						<p>Add jQuery to a page that doesn't have it</p>
+					</section>
+					<section>
+						<h2><a href="https://github.com/bgrins/devtools-snippets/blob/master/snippets/log-globals/log-globals.js">Log Globals</a></h2>
+						<p>Find leaked globals</p>
+					</section>
+					<section>
+						<h2>More snippets can be found at:</h2>
+						<p><a href="https://github.com/paulirish/devtools-addons/wiki/Snippets">https://github.com/paulirish/devtools-addons/wiki/Snippets</a></p>
+						<p><a href="http://bgrins.github.io/devtools-snippets/">http://bgrins.github.io/devtools-snippets</a><br></p>
+						<p><a href="https://github.com/bahmutov/code-snippets">https://github.com/bahmutov/code-snippets</a></p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>Timeline Panel Screenshots</h1>
+					</section>
+					<section>
+						<h1>Call now, and we'll double the offer!</h1>
+						<h1 class="blink">555-867-5309</h1>
+					</section>					
+					<section>
+						<h1>Network Panel Screenshots</h1>
+					</section>
+				</section>
+
+				<section>
+					<h1>Network panel filters</h1>
+					<p>Many different filters such as larger-than and domain</p>
+					<p class="fragment">Chrome will autocomplete the filters applicable to your data, so play around</p>
+				</section>		
+				
+				<section>
+					<h1>Timeline panel</h1>
+				</section>
+
+				<section>
+					<img src="http://siirila.github.io/devTools_talk/images/slow-frame.png" alt="DevTools slow frame screenshot" class="stretch">
+				</section>
+
+				<section data-transition="slide-in zoom">
+					<img src="http://siirila.github.io/devTools_talk/images/forced-async.png" alt="DevTools forced asynchronous frame screenshot" class="stretch">
+				</section>
+
+				<section data-transition="zoom">
+					<h1>But Wait, There's More!</h1>
+				</section>
+
+				<section data-transition="zoom slide-out">
+					<h1>DevTools all the way down</h1>
+					<p class="fragment">The DevTools themselves are a web app that can be edited by opening DevTools on them if they are undocked!</p>
+				</section>
+
+				<section>
+					<h1>Enable DevTools Experiments</h1>
+					<img src="http://siirila.github.io/devTools_talk/images/chrome-flags.png" alt="Chrome Flag for DevTools Experiments" class="stretch">
+				</section>
+
+				<section>
+					<h1>Ascii video in the Console</h1>
+					<a href="http://neax.de/blog/console/">http://neax.de/blog/console/</a>
+				</section>
+
+				<section data-background="http://siirila.github.io/devTools_talk/images/Wow.png">
+					<h1 class="blink">555-867-5309</h1>
+				</section>
 			</div>
 
+			</div>
 		</div>
 
 		<script src="assets/js/head.min.js"></script>
